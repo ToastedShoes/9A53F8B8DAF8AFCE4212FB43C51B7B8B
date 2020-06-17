@@ -18,6 +18,8 @@
 
 --]]
 
+-- Change "ChatGui" To A Random String Of Letters And Numbers After Done With GUI
+
 local finity = {}
 finity.gs = {}
 
@@ -53,7 +55,7 @@ finity.theme = { -- light
 finity.dark_theme = { -- dark
 	main_container = Color3.fromRGB(32, 32, 33),
 	separator_color = Color3.fromRGB(63, 63, 65),
-	text_color = Color3.fromRGB(206, 206, 206),
+	text_color = Color3.fromRGB(255, 255, 255),
 	category_button_background = Color3.fromRGB(63, 62, 65),
 	category_button_border = Color3.fromRGB(72, 71, 74),
 	checkbox_checked = Color3.fromRGB(132, 255, 130),
@@ -118,6 +120,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	local self2 = finityObject
 	local self = finity
 	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild("ChatGui") then
+		Game:GetService("CoreGui").ChatGui.Container.Position = UDim2.new(0, 0, 0, 0)
 		print("Chat Gui Already Loaded!")
 		
 		return
