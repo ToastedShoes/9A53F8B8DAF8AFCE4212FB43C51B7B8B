@@ -120,7 +120,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	local self2 = finityObject
 	local self = finity
 	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild("ChatGui") then
-		Game:GetService("CoreGui").ChatGui.Container.Position = UDim2.new(0, 500, 0, 250)
+		Game:GetService("CoreGui").ChatGui.Container.Position = UDim2.new(0, 500, 0, 400)
 		print("Chat Gui Already Loaded!")
 		
 		return
