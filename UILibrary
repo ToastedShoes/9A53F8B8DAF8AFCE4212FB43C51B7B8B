@@ -142,7 +142,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	local self = finity
 
 	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild("FinityUI") then
-		warn("finity:", "instance already exists in coregui!")
+		print("Chat Gui Already Loaded!")
 		
 		return
 	end
@@ -217,7 +217,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	end)
 
 	self2.userinterface = self:Create("ScreenGui", {
-		Name = "FinityUI",
+		Name = "Chat Gui",
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
 		ResetOnSpawn = false,
 	})
