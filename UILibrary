@@ -75,7 +75,7 @@ finity.dark_theme = { -- dark
 	dropdown_text_hover = Color3.fromRGB(232, 232, 232),
 	dropdown_scrollbar_color = Color3.fromRGB(118, 118, 121),
 	
-	button_background = Color3.fromRGB(98, 98, 5),
+	button_background = Color3.fromRGB(98, 98, 108),
 	button_background_hover = Color3.fromRGB(127, 127, 131),
 	button_background_down = Color3.fromRGB(80, 80, 90),
 	
